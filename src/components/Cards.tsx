@@ -24,7 +24,7 @@ function Cards({ data }: { data: { title: string; data: CardProps[] } }) {
   console.log({ data });
   return (
     <>
-      <h2 class="text-white lg:text-[30px] pb-6">{data?.title}</h2>
+      <h2 class="text-white text-[30px] pb-6">{data?.title}</h2>
       <div class="flex flex-wrap">
         <For each={data?.data} fallback={null}>
           {(item, index) => <Card {...item} />}
