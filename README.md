@@ -31,6 +31,19 @@ There is a file at `src/metaData.json` it has the text contents that is rendered
 
 ## Building
 
+```bash
+yarn build
+
+```
+
 Solid apps are built with _adapters_, which optimise your project for deployment to different environments.
 
 By default, `npm run build` will generate a Node app that you can run with `node build`. To use a different adapter, add it to the `devDependencies` in `package.json` and specify in your `vite.config.js`.
+
+## Deployment on Vercel
+
+follow this [doc](https://vercel.com/guides/deploying-solid-with-vercel) with following config
+
+<img width="1728" alt="image" src="https://user-images.githubusercontent.com/28999685/187771174-4c3da4f2-72ea-499a-b1ed-9e5ae2319ec7.png">
+
+
