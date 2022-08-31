@@ -1,0 +1,50 @@
+{
+  "vite/modulepreload-polyfill": [],
+  "node_modules/solid-js/dist/solid.js": [],
+  "node_modules/solid-js/web/dist/web.js": [],
+  "\u0000vite/preload-helper": [],
+  "node_modules/solid-start/entry-client/mount.tsx": [],
+  "node_modules/@solidjs/meta/dist/index.jsx": [],
+  "node_modules/@solidjs/router/dist/integration.js": [],
+  "node_modules/@solidjs/router/dist/utils.js": [],
+  "node_modules/@solidjs/router/dist/routing.js": [],
+  "node_modules/@solidjs/router/dist/components.jsx": [],
+  "node_modules/solid-start/server/ServerContext.tsx": [],
+  "node_modules/solid-start/server/types.tsx": [],
+  "node_modules/solid-start/error-boundary/ErrorBoundary.tsx": [],
+  "node_modules/solid-start/root/FileRoutes.tsx": [],
+  "node_modules/solid-start/root/Scripts.tsx": [],
+  "node_modules/solid-start/root/Document.tsx": [],
+  "node_modules/solid-start/index.tsx": [],
+  "src/root.css": [],
+  "src/root.tsx": [],
+  "node_modules/solid-start/entry-client/StartClient.tsx": [],
+  "src/entry-client.tsx": [],
+  ".solid/index.html": [],
+  "_...404_.72551061.js": [],
+  "index.fe1c72b1.js": [],
+  "src/routes/[...404].tsx": [
+    "/assets/_...404_.72551061.js"
+  ],
+  "src/components/About.tsx": [
+    "/assets/index.fe1c72b1.js"
+  ],
+  "src/components/Cards.tsx": [
+    "/assets/index.fe1c72b1.js"
+  ],
+  "src/components/Divider.tsx": [
+    "/assets/index.fe1c72b1.js"
+  ],
+  "src/components/MainCta.tsx": [
+    "/assets/index.fe1c72b1.js"
+  ],
+  "src/components/SocialLinks.tsx": [
+    "/assets/index.fe1c72b1.js"
+  ],
+  "src/metaData.json": [
+    "/assets/index.fe1c72b1.js"
+  ],
+  "src/routes/index.tsx": [
+    "/assets/index.fe1c72b1.js"
+  ]
+}
