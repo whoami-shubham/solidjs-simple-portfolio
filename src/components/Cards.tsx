@@ -8,20 +8,19 @@ interface CardProps {
 
 function Card({ title, url, description }: CardProps) {
   return (
-    <div class="bg-cardbg flex flex-col border-2 border-cardborder py-4 px-8 rounded-2xl my-4 max-w-[360px] mr-4">
+    <div class="bg-cardbg flex flex-col border-2 border-cardborder py-4 px-8 rounded-2xl my-4 w-[360px] mr-4">
       <div class="flex justify-between">
-        <span class="text-[18px] text-skyblue font-bold">{title}</span>
+        <span class="text-[16px] text-skyblue font-[600]">{title}</span>
         <a href={url}>
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
       </div>
-      <p class="text-[27px] text-white font-bold py-4">{description}</p>
+      <p class="text-[20px] text-white font-bold py-4">{description}</p>
     </div>
   );
 }
 
 function Cards({ data }: { data: { title: string; data: CardProps[] } }) {
-  console.log({ data });
   return (
     <>
       <h2 class="text-white text-[30px] pb-6">{data?.title}</h2>
