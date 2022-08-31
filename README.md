@@ -1,6 +1,10 @@
 # solidjs-simple-portfolio
 
-Everything you need to build a Solid project, powered by [`solid-start`](https://github.com/ryansolid/solid-start/tree/master/packages/solid-start); and Tailwind
+Everything you need to build a Solid project, powered by [`solid-start`](https://github.com/ryansolid/solid-start/tree/master/packages/solid-start) and Tailwind
+
+[Live demo](http://solidjs-simple-portfolio.vercel.app/)
+<img width="1728" alt="image" src="https://user-images.githubusercontent.com/28999685/187770363-551e1445-8c99-4646-8813-4ec95f7599b6.png">
+
 
 ## Install dependencies
 
