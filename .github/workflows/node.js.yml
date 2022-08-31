@@ -32,6 +32,6 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         personal_token: ${{ secrets.TOKEN }}
-        external_repository: solidjs-simple-portfolio
+        external_repository: whoami-shubham/solidjs-simple-portfolio
         publish_dir: ./dist
         publish_branch: gh-pages
