@@ -1,0 +1,75 @@
+{
+  "components": [
+    {
+      "name": "MainCta",
+      "data": {
+        "name": "Shubham Jha",
+        "bio": "Software Engineer | Some other cool title"
+      }
+    },
+    {
+      "name": "Divider",
+      "data": { "className": "my-4" }
+    },
+    {
+      "name": "SocialLinks",
+      "data": [
+        { "name": "github", "url": "https://github.com/whoami-shubham" },
+        { "name": "linkedin", "url": "https://linkedin.com/in/whoamishubham" },
+        {
+          "name": "stack-overflow",
+          "url": "https://stackoverflow.com/users/7784354/shubham-jha?tab=profile"
+        },
+        { "name": "gmail", "url": "mailto:whoanishubham@gmail.com" },
+        { "name": "medium", "url": "" },
+        { "name": "twitter", "url": "https://twitter.com/whoami_shubham" },
+        {
+          "name": "instagram",
+          "url": "https://www.instagram.com/whoami_shubham/"
+        },
+        {
+          "name": "facebook",
+          "url": "https://www.facebook.com/whoami.shubham/"
+        }
+      ]
+    },
+    {
+      "name": "Divider",
+      "data": {}
+    },
+    {
+      "name": "About",
+      "data": {
+        "title": "About Me",
+        "description": "Hi! I'm Shubham, a 24 y/o software engineer at ShareChat, most of the time I work in Frontend Web (React,NextJs,SolidJs),  Mobile App development (React Native, Flutter) and some other stuffs. I also like contributing on open source projects, writing blogs and learning new computer science concepts!"
+      }
+    },
+    {
+      "name": "Divider",
+      "data": {}
+    },
+    {
+      "name": "Cards",
+      "data":{
+        "title":"Projects",
+        "data": [
+          {
+            "title":"Npm Library",
+            "description":"obfuscator-io-metro-plugin",
+            "url":"https://github.com/whoami-shubham/obfuscator-io-metro-plugin"
+          },
+          {
+            "title":"Personal Project",
+            "description":"codeadept_2.0_IDE",
+            "url":"https://github.com/whoami-shubham/codeadept_2.0_IDE"
+          },
+          {
+            "title":"Npm Library",
+            "description":"typedoc-type-coverage-plugin",
+            "url":"https://github.com/ShareChat/typedoc-type-coverage-plugin"
+          }
+        ]
+      }
+    }
+  ]
+}
