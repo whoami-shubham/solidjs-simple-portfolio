@@ -33,5 +33,5 @@ jobs:
       with:
         personal_token: ${{ secrets.TOKEN }}
         external_repository: whoami-shubham/solidjs-simple-portfolio
-        publish_dir: ./dist
+        publish_dir: ./dist/public
         publish_branch: gh-pages
