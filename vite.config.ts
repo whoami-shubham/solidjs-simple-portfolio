@@ -1,6 +1,9 @@
 import solid from "solid-start/vite";
+import static from "solid-start-static";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [solid({ ssr: false })],
+  base: "/solidjs-simple-portfolio/",
+  // insert your github project name between slashes above
+  plugins: [solid({ adapter: static() })],
 });
