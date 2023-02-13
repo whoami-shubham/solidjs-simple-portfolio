@@ -5,7 +5,7 @@
     "build": "solid-start build",
     "start": "solid-start start",
     "serve": "vite --host",
-    "postinstall": "patch-package solid-start"
+    "postinstall": "patch-package"
   },
   "type": "module",
   "devDependencies": {

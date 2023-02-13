@@ -1,0 +1,121 @@
+diff --git a/node_modules/solid-start/entry-client/StartClient.tsx b/node_modules/solid-start/entry-client/StartClient.tsx
+index c48d5a6..aa554de 100644
+--- a/node_modules/solid-start/entry-client/StartClient.tsx
++++ b/node_modules/solid-start/entry-client/StartClient.tsx
+@@ -70,7 +70,7 @@ export default () => {
+   return (
+     <ServerContext.Provider value={mockFetchEvent}>
+       <MetaProvider>
+-        <StartRouter data={dataFn}>
++        <StartRouter base={import.meta.env.BASE_URL} data={dataFn}>
+           <Root />
+         </StartRouter>
+       </MetaProvider>
+diff --git a/node_modules/solid-start/entry-client/StartClient.tsx.orig b/node_modules/solid-start/entry-client/StartClient.tsx.orig
+new file mode 100644
+index 0000000..c48d5a6
+--- /dev/null
++++ b/node_modules/solid-start/entry-client/StartClient.tsx.orig
+@@ -0,0 +1,79 @@
++import { MetaProvider } from "@solidjs/meta";
++import { Router, RouterProps } from "@solidjs/router";
++import Root from "~start/root";
++import { ServerContext } from "../server/ServerContext";
++import { FETCH_EVENT, PageEvent } from "../server/types";
++
++const rootData = Object.values(import.meta.glob("/src/root.data.(js|ts)", { eager: true }))[0];
++const dataFn = rootData ? rootData.default : undefined;
++
++function throwClientError(field: string): any {
++  throw new Error(
++    `"${field}" is not available on the client. Use it within an \`if (isServer)\` block to ensure it only runs on the server`
++  );
++}
++
++export default () => {
++  let mockFetchEvent: PageEvent = {
++    get request() {
++      if (process.env.NODE_ENV === "development") {
++        return throwClientError("request");
++      }
++    },
++    get prevUrl() {
++      if (process.env.NODE_ENV === "development") {
++        return throwClientError("request");
++      }
++    },
++    get responseHeaders() {
++      if (process.env.NODE_ENV === "development") {
++        return throwClientError("responseHeaders");
++      }
++    },
++    get tags() {
++      if (process.env.NODE_ENV === "development") {
++        return throwClientError("tags");
++      }
++    },
++    get env() {
++      if (process.env.NODE_ENV === "development") {
++        return throwClientError("env");
++      }
++    },
++    get routerContext() {
++      if (process.env.NODE_ENV === "development") {
++        return throwClientError("routerContext");
++      }
++    },
++    setStatusCode(code: number) {
++      if (process.env.NODE_ENV === "development") {
++        return throwClientError("setStatusCode");
++      }
++    },
++    getStatusCode() {
++      if (process.env.NODE_ENV === "development") {
++        return throwClientError("getStatusCode");
++      }
++    },
++    $type: FETCH_EVENT,
++    fetch
++  };
++
++  function StartRouter(props: RouterProps) {
++    return (
++      <Router {...props}>
++        <Root />
++      </Router>
++    );
++  }
++
++  return (
++    <ServerContext.Provider value={mockFetchEvent}>
++      <MetaProvider>
++        <StartRouter data={dataFn}>
++          <Root />
++        </StartRouter>
++      </MetaProvider>
++    </ServerContext.Provider>
++  );
++};
+diff --git a/node_modules/solid-start/entry-client/StartClient.tsx.rej b/node_modules/solid-start/entry-client/StartClient.tsx.rej
+new file mode 100644
+index 0000000..ebe8b2e
+--- /dev/null
++++ b/node_modules/solid-start/entry-client/StartClient.tsx.rej
+@@ -0,0 +1,17 @@
++***************
++*** 70,76 ****
++    return (
++      <ServerContext.Provider value={mockFetchEvent}>
++        <MetaProvider>
++-         <StartRouter data={dataFn}>
++            <Root />
++          </StartRouter>
++        </MetaProvider>
++--- 70,76 ----
++    return (
++      <ServerContext.Provider value={mockFetchEvent}>
++        <MetaProvider>
+++         <StartRouter base={import.meta.env.BASE_URL} data={dataFn}>
++            <Root />
++          </StartRouter>
++        </MetaProvider>
