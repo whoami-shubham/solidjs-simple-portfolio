@@ -4,7 +4,8 @@
     "dev": "solid-start dev",
     "build": "solid-start build",
     "start": "solid-start start",
-    "serve":"vite --host"
+    "serve":"vite --host",
+    "postinstall": "patch -Np1 -i solid-start-use-base-path-in-client-router.patch"
   },
   "type": "module",
   "devDependencies": {
@@ -20,7 +21,8 @@
     "@solidjs/router": "^0.4.2",
     "solid-js": "1.5.1",
     "solid-start": "0.1.0-alpha.99",
-    "undici": "^5.8.0"
+    "undici": "^5.8.0",
+    "solid-start-static":"*"
   },
   "engines": {
     "node": ">=14"
