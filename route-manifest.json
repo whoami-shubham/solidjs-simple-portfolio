@@ -1,31 +1,14 @@
 {
-  "/*404": [
+  "/*404": [],
+  "/": [],
+  "entry-client": [
     {
       "type": "script",
-      "href": "/assets/_...404_.72551061.js"
-    },
-    {
-      "type": "script",
-      "href": "/assets/index.62e39eb7.js"
-    },
-    {
-      "type": "style",
-      "href": "/assets/index.4567315b.css"
-    }
-  ],
-  "/": [
-    {
-      "type": "script",
-      "href": "/assets/index.fe1c72b1.js"
-    },
-    {
-      "type": "script",
-      "href": "/assets/index.62e39eb7.js"
+      "href": "/assets/entry-client.04694ec1.js"
     },
     {
       "type": "style",
-      "href": "/assets/index.4567315b.css"
+      "href": "/assets/entry-client.44183ffa.css"
     }
-  ],
-  "entry-client": []
+  ]
 }
